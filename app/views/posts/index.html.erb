@@ -6,8 +6,8 @@
   <section class= "mid-section col-10 pl-0 full-height">
   
     <%= render 'users/navbar' %>
-    <article class= 'row whotofollow'>
-        <div class ='col-9 mt-5 '>    
+    <article class= 'main-showcase whotofollow full-height'>
+        <div class ='mt-5 '>    
               <div class= ' football-form bg-white text-center border'>
                 <%= render 'form', post: @post %>
               </div> 
@@ -16,7 +16,7 @@
               </div>      
         </div>
        
-          <div class ='col-3 follow-sec'>
+          <div class =' follow-sec'>
               <%= render 'posts/whotofollow' %>
           </div>
      </article>
