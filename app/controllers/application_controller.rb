@@ -1,11 +1,5 @@
 class ApplicationController < ActionController::Base
-    def user_image(user)
-        if @user.photo.attached?
-          @user.photo
-        else
-          gravatar_image_url(user.username)
-        end
-      end
+   
 
       protect_from_forgery with: :exception
 
