@@ -1,19 +1,27 @@
-<p id="notice"><%= notice %></p>
+<section class= "main-section row full-height">
+    <aside class="col-2 leftnav full-height">
+      <%= render 'users/leftnav' %>
+    </aside>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+  <section class= "mid-section col-10 pl-0 full-height">
+  
+    <%= render 'users/navbar' %>
+    <article class= 'row whotofollow'>
+        <div class ='col-9 mt-5 '>    
+            <div class="showcase">
+                 <% if @users_cover.cover_image.attached? %>
+                    <%= image_tag @user.cover_image, class: "cover-img" %>
+                 <% else %>
+                      <%= image_tag "cover.jpg", class: "cover-img" %>
+                 <% end %>
+            </div>
 
-<p>
-  <strong>Photo:</strong>
-  <%= @user.photo %>
-</p>
 
-<p>
-  <strong>Cover image:</strong>
-  <%= @user.cover_image %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+        </div>
+       
+          <div class ='col-3 follow-sec'>
+              <%= render 'posts/whotofollow' %>
+          </div>
+     </article>
+  </section>
+</section>
