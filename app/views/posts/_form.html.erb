@@ -13,7 +13,14 @@
 
   <div class="field ">
     <div class="text-area mx-auto py-3">
-      <%= form.text_area :body,  class: "form-control"%>
+        <div>
+          <%= form.text_area :body,  class: "form-control"%>
+          </div>
+
+     <div class="field">
+     
+      <%= form.hidden_field :user_id %>
+    </div>
 
       <div class="actions">
         <%= form.submit 'Share thoughts', class:'btn btn-primary mt-2' %>
