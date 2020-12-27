@@ -1,0 +1,10 @@
+<div class="mb-3 sign-up">
+<%= form_for(:session, url: login_path) do |f| %>
+   <%= f.text_field :username,placeholder: "Username", class: "form-control"  %> 
+  
+    <%= f.submit "Login",class: "button btn btn-primary"  %>
+  
+<% end %>
+
+<p>Dont have an account?<%= link_to 'Sign up', new_user_path %></p>
+</div>
