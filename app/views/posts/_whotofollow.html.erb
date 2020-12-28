@@ -9,12 +9,12 @@
  
 
   <div >
-    <% @users.each do |user| %>
-      <article class=" d-flex align-items-center my-3">
-        
+    <% @users.with_attached_photo.each do |user| %>
+      <article class="d-flex align-items-center my-3">
+        <%= image_tag user_image(user), class: 'whotofollow-img rounded-circle' %>
         <div class="pl-2">
-          <h5 class=" font-14 text-dark mb-0 font-weight-bold text-break"><%= link_to user.username, user_path(@user) %></h5>
-            <%= user_followers(user) %>
+          <h5 class="font-14 text-dark mb-0 font-weight-bold text-break"><%= link_to user.username, user_path(user) %></h5>
+          <%= user_followers(user) %>
         </div>
       </article>
     <% end %>

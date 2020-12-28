@@ -84,3 +84,17 @@ html, body {
     width: 500px;
     margin: 0 auto;
 }
+
+.whotofollow-img {
+    width: 40px;
+    height: 40px;
+}
+
+.showcase-nav {
+    position: relative;
+    bottom: 50px;
+}
+
+.text-white {
+    color: #fff;
+}

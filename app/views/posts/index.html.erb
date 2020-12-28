@@ -1,17 +1,21 @@
 <section class= "main-section row full-height">
     <aside class="col-2 leftnav full-height">
       <%= render 'users/leftnav' %>
+
     </aside>
 
   <section class= "mid-section col-10 pl-0 full-height">
   
     <%= render 'users/navbar' %>
-    <article class= 'main-showcase whotofollow full-height'>
+       
+
+    <article class= 'main-showcase whotofollow'>
         <div class ='mt-5 '>    
-              <div class= ' football-form bg-white text-center border'>
+        <%= render 'users/mainshowcasenav' %>
+              <div class= ' football-form bg-white text-center border '>
                 <%= render 'form', post: @post %>
               </div> 
-              <div class= ' football-form bg-white text-center border mt-4'>
+              <div class= ' football-form bg-white text-center border mt-4 shadow rounded'>
                 <%= render 'posts/show' %>
               </div>      
         </div>
