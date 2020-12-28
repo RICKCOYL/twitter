@@ -4,15 +4,15 @@ class User < ApplicationRecord
     uniqueness: {:message => "Username already exisits. Please select a different one."},
     length: {in: 3..15, :message => "Username should be 3-5 characters long", :allow_blank => true}
 
-    has_many :posts
+    has_many :posts, dependent: :destroy
     has_one_attached :photo
     has_one_attached :cover_image
 
     
     #==============Association with a user that a user is following=================
-    has_many :relationships, foreign_key: "user_id",dependent: :destroy
+    has_many :relationships, foreign_key: "user_id", dependent: :destroy
     has_many :followings, through: :relationships, source: :follow
-    has_many :passive_relationships, class_name: "Relationship", foreign_key: "follow_id",dependent: :destroy
+    has_many :passive_relationships, class_name: "Relationship", foreign_key: "follow_id", dependent: :destroy
     has_many :followers, through: :passive_relationships, source: :user
     
 
