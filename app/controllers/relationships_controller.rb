@@ -1,6 +1,6 @@
 class RelationshipsController < ApplicationController
   before_action :set_user
-
+  # rubocop:disable  Style/IdenticalConditionalBranches
   def create
     following = current_user.follow(@user)
     if following.save
@@ -22,6 +22,7 @@ class RelationshipsController < ApplicationController
       redirect_to @user
     end
   end
+  # rubocop:enable  Style/IdenticalConditionalBranches
 
   private
 

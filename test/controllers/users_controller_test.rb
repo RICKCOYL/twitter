@@ -32,12 +32,12 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     get edit_user_url(@user)
     assert_response :success
   end
-
+  # rubocop:disable  Layout/LineLength
   test 'should update user' do
     patch user_url(@user), params: { user: { cover_image: @user.cover_image, photo: @user.photo, username: @user.username } }
     assert_redirected_to user_url(@user)
   end
-
+  # rubocop:enable  Layout/LineLength
   test 'should destroy user' do
     assert_difference('User.count', -1) do
       delete user_url(@user)
