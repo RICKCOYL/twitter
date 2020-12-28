@@ -1,4 +1,4 @@
-![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
+![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
 # Twitter redesign social web app built in rails with user registration and creation of talks(tweets)/follow/unfollow users.
 
@@ -7,15 +7,6 @@
 > In app users can <b>sign up/sign in . Users can upload a profile and cover images at the sign-up or after they sign in by accessing the profile page, here they can also edit their username and full name.
 > <br>
 > The app is tested using RSpec for unit and integration tests
-
-## App functionality
-
-- Users can sign up/sign in/sign out
-- Users can createtweets
-- Users can upload a profile and cover images when they sign up, otherwise they will have default placeholders
-- Users can edit their profile username and images
-- Users can follow and unfollow other users
-- Users can see who he is following and who are following other users
 
 ## This web app is live, you can check it here: [Live demo]()
 
@@ -33,6 +24,15 @@
 - Rails Active Storage
 - Bootstrap
 - Fontawesome
+
+## App functionality
+
+- Users can sign up/sign in/sign out
+- Users can createtweets
+- Users can upload a profile and cover images when they sign up, otherwise they will have default placeholders
+- Users can edit their profile username and images
+- Users can follow and unfollow other users
+- Users can see who he is following and who are following other users
 
 ## Prerequisities
 
