@@ -25,6 +25,7 @@ end
     @userz = User.find(params[:id])
     @relationship = current_user.relationships.find_by(follow_id: @user.id)  
     @set_relationship = current_user.relationships.new
+    @posts =Post.all
   end
 
   def destroy
