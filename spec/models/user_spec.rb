@@ -1,11 +1,18 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'associations' do
-    it { should have_many(:relationships) }
-    it { should have_many(:followings) }
-    it { should have_many(:passive_relationships) }
-    it { should have_many(:followers) }
-    it { should have_many(:posts)
+  describe 'Associations' do
+    it { should have_many(:posts) }
+
+    it 'User should have many friends' do
+      should have_many(:followings)
+    end
+
+    it 'User can have many comments' do
+      should have_many(:followers)
+    end
+    it 'User can have many likes' do
+      should have_many(:relationships)
+    end
   end
 end
