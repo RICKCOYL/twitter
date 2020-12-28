@@ -2,6 +2,7 @@
 <%= image_tag user_image(current_user), class: 'timeline-pic' %>
    
     <p class="mb-0 text-gray text-break"><%= current_user.username %></p>
+      <%= render 'relationships/follow_form', user: @user %>
   </div>
 
   <div class="user-profile-social row text-center">
