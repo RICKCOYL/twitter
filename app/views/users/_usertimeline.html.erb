@@ -11,11 +11,11 @@
       <p class="logged-user-social-type text-gray font-12 mb-0">Posts</p>
     </div>
     <div class="col-4 py-4 border px-0">
-      <%#<p class="logged-user-social-length mb-0 h5"><%= user.followed_users.size %></p>%>
+      <p class="logged-user-social-length mb-0 h5"><%= @user.followings.size %></p>
       <p class="logged-user-social-type text-gray font-12 mb-0">Following</p>
     </div>
     <div class="col-4 py-4 border-bottom border-top px-0">
-      <%#<p class="logged-user-social-length mb-0 h5"> <%= user.followers.size %></p>%>
+      <p class="logged-user-social-length mb-0 h5"> <%= @user.followers.size %></p>
       <p class="logged-user-social-type text-gray font-12 mb-0">Followers</p>
     </div>
   </div>
