@@ -20,17 +20,7 @@
         </div>
        
           <div class ='follow-sec'>
-         <% if current_user == @user %>
-               <%= link_to edit_user_path(@user), class: "text-decoration-none text-secondary big-icon mr-3" do %>
-               <i class="fas fa-user-edit fa-lg" aria-hidden="true"></i>
-        <% end %>
-    <% else %>
-        <% if current_user != @user && current_user.followed?(@user) %>
-            <%= render 'unfollow_button' %>
-        <% else %>
-            <%= render partial: 'follow_button', locals: {user: @user} %>
-        <% end %>
-    <% end %>
+            <%= render 'users/usertimeline' %>
           </div>
      </article>
   </section>

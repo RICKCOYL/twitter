@@ -60,3 +60,13 @@ html, body {
     position: relative;
     bottom: 48px;
 }
+
+.avatar {
+    height: 70px;
+    width: 70px;
+}
+
+.timeline-pic{
+    height: 120px;
+    width: 120px;
+}

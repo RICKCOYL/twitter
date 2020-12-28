@@ -8,7 +8,7 @@ class UsersController < ApplicationController
 
   
 def create
-  @user = User.find_or_create_by(user_params)
+  @user = User.new(user_params)
   if @user.save
     session[:user_id] = @user.id
     redirect_to posts_path

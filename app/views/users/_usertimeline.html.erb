@@ -1,0 +1,20 @@
+<div class="user-profile-header text-center mb-2">
+<%= image_tag user_image(current_user), class: 'timeline-pic' %>
+   
+    <p class="mb-0 text-gray text-break"><%= current_user.username %></p>
+  </div>
+
+  <div class="user-profile-social row text-center">
+    <div class="col-4 py-4 border-bottom border-top px-0">
+      <p class="logged-user-social-length mb-0 h5"><%= @user.posts.size %></p>
+      <p class="logged-user-social-type text-gray font-12 mb-0">Posts</p>
+    </div>
+    <div class="col-4 py-4 border px-0">
+      <%#<p class="logged-user-social-length mb-0 h5"><%= user.followed_users.size %></p>%>
+      <p class="logged-user-social-type text-gray font-12 mb-0">Following</p>
+    </div>
+    <div class="col-4 py-4 border-bottom border-top px-0">
+      <%#<p class="logged-user-social-length mb-0 h5"> <%= user.followers.size %></p>%>
+      <p class="logged-user-social-type text-gray font-12 mb-0">Followers</p>
+    </div>
+  </div>
