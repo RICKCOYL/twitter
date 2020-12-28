@@ -1,7 +1,7 @@
 <div class="user-profile-header text-center mb-2">
-<%= image_tag user_image(current_user), class: 'timeline-pic' %>
+<%= image_tag user_image(@user), class: 'timeline-pic' %>
    
-    <p class="mb-0 text-gray text-break"><%= current_user.username %></p>
+    <p class="mb-0 text-gray text-break"><%= @user.username %></p>
       <%= render 'relationships/follow_form', user: @user %>
   </div>
 

@@ -7,7 +7,7 @@ class PostsController < ApplicationController
     @posts = Post.all
     @user = User.find_by(params[:username])
     @post = Post.new
-    @users = User.all
+    @users = User.all_not_followed(current_user).order('created_at DESC').includes(:followers)
   end
   # GET /posts/1
   # GET /posts/1.json

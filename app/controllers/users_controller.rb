@@ -19,10 +19,7 @@ def create
 end
 
   def show
-    @user = User.find_by(params[:username])
-    @users_cover = User.find_by_id!(params[:id])
-    @users = User.all
-    @userz = User.find(params[:id])
+    @user = User.find(params[:id])
     @relationship = current_user.relationships.find_by(follow_id: @user.id)  
     @set_relationship = current_user.relationships.new
     @posts =Post.all

@@ -9,8 +9,8 @@
     <article class= 'main-showcase whotofollow full-height'>
         <div class ='mt-5 '>    
             <div class="showcase">
-                <% if @users_cover.cover_image.attached? %>
-                    <%= image_tag @users_cover.cover_image, class: "cover-image" %>
+                <% if @user.cover_image.attached? %>
+                    <%= image_tag @user.cover_image, class: "cover-image" %>
                  <% else %>
                       <%= image_tag "cover.jpg", class: "cover-image" %>
                  <% end %>
@@ -24,7 +24,7 @@
         </div>
        
           <div class ='follow-sec'>
-            <%= render 'users/usertimeline' %>
+            <%= render 'users/usertimeline'%>
             
 
           </div>
