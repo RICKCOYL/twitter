@@ -1,7 +1,5 @@
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
-# Twitter redesign social web app built in rails with user registration and creation of talks(tweets)/follow/unfollow users.
-
 > In this project, we were required to build a social app where users can sign-up/sign-in/sign out, create tweets, and follow/unfollow other users.
 > <br>
 > In app users can <b>sign up/sign in . Users can upload a profile and cover images at the sign-up or after they sign in by accessing the profile page, here they can also edit their username and full name.
