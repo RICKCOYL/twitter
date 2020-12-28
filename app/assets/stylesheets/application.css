@@ -16,6 +16,7 @@ html, body {
     text-align: center;
 }
 
+
 .button{
     margin-top: 5px;
 }
@@ -69,4 +70,17 @@ html, body {
 .timeline-pic{
     height: 120px;
     width: 120px;
+}
+
+.nav-color {
+    background-color: #60ADE6;
+}
+
+.welcome {
+    width: 400px;
+}
+
+.welcome-div {
+    width: 500px;
+    margin: 0 auto;
 }

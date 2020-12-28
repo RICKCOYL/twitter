@@ -1,4 +1,9 @@
-<div class="mb-3 sign-up">
+<%= render 'users/loginnav' %>
+<div class="welcome-div">
+<%= render 'users/welcomelogo'  %>
+</div>
+
+<div class="mb-3 sign-up animate__animated animate__lightSpeedInLeft">
 <%= form_for(:session, url: login_path) do |f| %>
    <%= f.text_field :username,placeholder: "Username", class: "form-control"  %> 
   
