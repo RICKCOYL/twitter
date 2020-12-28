@@ -6,23 +6,22 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  
-def create
-  @user = User.new(user_params)
-  if @user.save
-    session[:user_id] = @user.id
-    redirect_to posts_path
-  else
-    flash.now[:errors] = @user.errors.full_messages
-    redirect_to users_path
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      session[:user_id] = @user.id
+      redirect_to posts_path
+    else
+      flash.now[:errors] = @user.errors.full_messages
+      redirect_to users_path
+    end
   end
-end
 
   def show
     @user = User.find(params[:id])
-    @relationship = current_user.relationships.find_by(follow_id: @user.id)  
+    @relationship = current_user.relationships.find_by(follow_id: @user.id)
     @set_relationship = current_user.relationships.new
-    @posts =Post.all
+    @posts = Post.all
   end
 
   def destroy
