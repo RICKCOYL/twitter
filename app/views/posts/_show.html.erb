@@ -1,15 +1,16 @@
 <h4>Football Posts</h4>
 
-  <tbody>
+  
     <% @posts.each do |post| %>
-      <tr>
-      <td><strong><%= @user.username.upcase%></strong></td><br>
-
-        <td><%= post.body %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+   <div>
+   <div><strong><%= @user.username.upcase%></strong><br></div>
+   <div><%= post.body %></td></div>
+     <div> <%= link_to 'Edit', edit_post_path(post) %>
+        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+   </div>  
+      <br>
+         <br>
     <% end %>
-  </tbody>
+ 
 </table>
 

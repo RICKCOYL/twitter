@@ -14,7 +14,7 @@
         
         <div class="pl-2">
           <h5 class=" font-14 text-dark mb-0 font-weight-bold text-break"><%= link_to user.username, user_path(@user) %></h5>
-          
+            <%= user_followers(user) %>
         </div>
       </article>
     <% end %>
