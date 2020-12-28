@@ -1,6 +1,6 @@
 ![Hireable](https://img.shields.io/badge/Hireable-yes-success) ![](https://img.shields.io/badge/Mobile--responsive-yes-green) ![](https://img.shields.io/badge/-Microverse%20projects-blueviolet)
 
-# Bible Talks social web app built in rails with user registration and creation of talks(tweets)/follow/unfollow users.
+# Twitter redesign social web app built in rails with user registration and creation of talks(tweets)/follow/unfollow users.
 
 > In this project, we were required to build a social app where users can sign-up/sign-in/sign out, create tweets, and follow/unfollow other users.
 > <br>
@@ -17,7 +17,7 @@
 - Users can follow and unfollow other users
 - Users can see who he is following and who are following other users
 
-## This web app is live, you can check it here: [Live demo](https://rails-bible-talks.herokuapp.com/)
+## This web app is live, you can check it here: [Live demo]()
 
 ## Screenshots of the app.
 
