@@ -16,9 +16,7 @@
                 <%= render 'form', post: @post %>
               </div> 
               <div class= ' football-form bg-white text-center border mt-4 shadow rounded'>
-              <% @posts.each do |post| %>
-                <%= render 'posts/show', post: post %>
-                <% end %>
+                <%= render 'posts/show' %> 
               </div>      
         </div>
        
