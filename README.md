@@ -7,7 +7,7 @@
 > <br>
 > The app is tested using RSpec for unit and integration tests
 
-## This web app is live, you can check it here: [Live demo]()
+## This web app is live, you can check it here: [Live demo](https://twitter-redesign-1.herokuapp.com/)
 
 ## Screenshots of the app.
 
