@@ -1,8 +1,5 @@
 class User < ApplicationRecord
-  validates :username,
-            presence: { message: 'Please choose a username.', on: :update },
-            uniqueness: { message: 'Username already exisits. Please select a different one.' },
-            length: { in: 3..15, message: 'Username should be 3-5 characters long', allow_blank: true }
+  validates :username,  uniqueness: true, presence: true
 
   has_many :posts, dependent: :destroy
   has_one_attached :photo
