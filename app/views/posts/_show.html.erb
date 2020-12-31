@@ -3,13 +3,9 @@
   
     <% @posts.each do |post| %>
    <div>
-   <div><strong><%= post.user.username.upcase%></strong><br></div>
-   <div><%= post.body %></td></div>
-     <div> <%= link_to 'Edit', edit_post_path(post) %>
-        <%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-   </div>  
-      <br>
-         <br>
+      <div><strong><%= post.user.username.upcase%></strong><br></div>
+      <div><%= post.body %></div>
+     </div> 
     <% end %>
  
 </table>
