@@ -12,8 +12,9 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect_to posts_path
     else
-      flash.now[:errors] = @user.errors.full_messages
-      redirect_to users_path
+     
+      redirect_to  new_user_path, notice: "Username has been taken."
+      
     end
   end
 
