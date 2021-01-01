@@ -6,7 +6,6 @@ RSpec.describe 'Posts', type: :request do
       get '/posts'
       expect(response).to be_truthy
     end
-
     it 'assigns @users' do
       post = Post.create(body: 'Test user')
       get '/posts'
