@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  validates :username,  uniqueness: true, presence: true
+  validates :username, presence: true, uniqueness: { case_sensitive: false }, length: { minimum: 3, maximum: 50 }
 
   has_many :posts, dependent: :destroy
   has_one_attached :photo
