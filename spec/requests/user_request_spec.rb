@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
-    it "Redirects to sign up page" do
+RSpec.describe 'Users', type: :request do
+  it 'Redirects to sign up page' do
     get '/users/new'
     expect(response).to render_template(:new)
 
