@@ -9,9 +9,7 @@ RSpec.describe 'Posts', type: :request do
     it 'assigns @users' do
       post = Post.create(body: 'Test user')
       get '/posts'
-      # rubocop:disable  Style/RedundantParentheses
       expect(assigns(:posts)).== ([post])
-      # rubocop:enable  Style/RedundantParentheses
     end
   end
 end
