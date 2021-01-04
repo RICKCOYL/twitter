@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all.includes([:user])
     @post = Post.new
     @users = User.all_not_followed(current_user).order('created_at DESC').includes(:followers)
   end
