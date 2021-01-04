@@ -1,0 +1,18 @@
+<%= form_with(model: @post) do |form| %>
+   <%= render 'posts/notice' %>
+  <div class="shadow rounded">
+    <div class="text-area mx-auto py-3">
+        <div>
+          <%= form.text_area :body,  class: "form-control"%>
+          </div>
+
+      <div class="actions">
+        <%= form.submit 'Share thoughts', class:'btn btn-primary mt-2' %>
+      </div>
+    </div>
+  </div>
+  
+
+
+  
+<% end %>

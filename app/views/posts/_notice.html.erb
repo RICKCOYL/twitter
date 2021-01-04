@@ -1,0 +1,6 @@
+ <% if @post.errors.any? %>
+   <div id="errorExplanation" class="alert alert-danger " role="alert" >
+      <p><%= pluralize(@post.errors.full_messages, "error") %> prohibited
+         this post from being saved:</p>
+    </div>
+    <% end %>

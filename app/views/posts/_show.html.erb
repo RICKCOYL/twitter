@@ -1,0 +1,13 @@
+<h4>Football Posts</h4>
+
+  
+    <% @posts.each do |post| %>
+   <div>
+      <div><strong><%= post.user.username.upcase%></strong><br></div>
+      <div><%= post.body %></div>
+      <div><%= post.created_at.strftime("%B %d %Y, %l:%M%P") %></div> 
+   </div>
+    <% end %>
+ 
+</table>
+

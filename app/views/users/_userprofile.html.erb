@@ -1,0 +1,26 @@
+<div class=" p-3">
+  <div class="d-flex align-items-center mb-0">
+  <%= image_tag user_image(current_user), class: 'rounded avatar' %>
+    <h3 class="font-14 pl-2 mb-0">
+      <%= link_to current_user.username, user_path(current_user) %>
+    </h3>
+  </div>
+
+ <div class="d-flex justify-content-between p-3">
+              <span class="text-center"><%= current_user.followings.size %><br>Following</span>
+              <span class="text-center"><%= current_user.followers.size %><br>Followers</span>
+  </div>
+
+   <ul class="user-profile-nav d-flex flex-column list-unstyled">
+              <li>
+                <%= link_to posts_path, class: "p-3" do %>
+                  <i class="fas fa-home"></i> Home
+                <% end %>
+              </li>
+              <li>
+                <%= link_to user_path(current_user.id), class: "p-3" do %>
+                  <i class="fas fa-user"></i> Profile
+                <% end %>
+              </li>
+             
+   </ul>

@@ -1,0 +1,25 @@
+<%= render 'users/loginnav' %>
+<div class="welcome-div">
+<%= render 'users/welcomelogo' %>
+</div>
+<div class="mb-3 mt-5 sign-up animate__animated animate__lightSpeedInLeft">
+<%= form_for @user do |f| %>
+    <%= f.text_field :username, placeholder: "Username", class: "form-control" %> 
+
+     <div class="form-group text-center">
+      <%= f.label :photo, 'profile picture (optional)', class: 'd-block' %>
+      <%= f.file_field :photo, class: 'border shadow-sm' %>
+      
+    </div>
+
+    <div class="form-group text-center">
+      <%= f.label :cover_image, 'Your cover image (optional)', class: 'd-block' %>
+      <%= f.file_field :cover_image, class: 'border shadow-sm' %>
+   
+    </div>
+  
+    <%= f.submit "Sign up", class: "button btn btn-primary" %>
+  
+<% end %>
+ <p>Already have an account? <%= link_to 'login', login_path%></p>
+</div>

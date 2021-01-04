@@ -1,0 +1,33 @@
+<section class= "main-section row full-height">
+    <aside class="col-2 leftnav ">
+      <%= render 'users/leftnav' %>
+    </aside>
+
+  <section class= "mid-section col-10 pl-0 full-height">
+  
+    <%= render 'users/navbar' %>
+    <article class= 'main-showcase whotofollow full-height'>
+        <div class ='mt-5 '>    
+            <div class="showcase">
+                <% if @user.cover_image.attached? %>
+                    <%= image_tag @user.cover_image, class: "cover-image" %>
+                 <% else %>
+                      <%= image_tag "cover.jpg", class: "cover-image" %>
+                 <% end %>
+            </div>
+
+    <div>
+         <%= render 'users/userprofilenav' %>
+         
+    </div>
+
+        </div>
+       
+          <div class ='follow-sec'>
+            <%= render 'users/usertimeline'%>
+            
+
+          </div>
+     </article>
+  </section>
+</section>
